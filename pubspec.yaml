@@ -18,8 +18,8 @@ topics:
   - responsive
 
 environment:
-  sdk: ^3.9.0
-  flutter: ">=3.27.0"
+  sdk: ^3.14.0
+  flutter: ">=3.50.0"
 
 dependencies:
   flutter:
