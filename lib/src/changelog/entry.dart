@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart' show AssetBundle, rootBundle;
 
 /// A semantic changelog entry: one release version and its change bullets.

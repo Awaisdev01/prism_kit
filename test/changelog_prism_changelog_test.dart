@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:typed_data';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter/services.dart' show AssetBundle, ImmutableBuffer;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:prism_kit/prism.dart';

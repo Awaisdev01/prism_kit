@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../theme/theme.dart';
 
@@ -146,7 +146,7 @@ class PrismSwitch extends StatelessWidget {
     return SwitchListTile(
       value: value,
       onChanged: enabled ? onChanged : null,
-      activeColor: scheme.primary,
+      activeThumbColor: scheme.primary,
       title: Text(
         title,
         style: Theme.of(context).textTheme.bodyLarge?.copyWith(

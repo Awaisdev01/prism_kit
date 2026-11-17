@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Reports when the attached scroll view approaches its end, so the list can
 /// trigger the next page load before the user reaches the bottom.

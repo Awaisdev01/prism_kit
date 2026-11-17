@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// A set of well-known width thresholds that map screen sizes to semantic
 /// window classes.
