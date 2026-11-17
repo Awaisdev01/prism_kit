@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.1.0
+
+### Updated
+- Migrated every component to the standalone `material_ui` package.
+  `package:flutter/material.dart` is deprecated in Flutter 3.50; new
+  import is `package:material_ui/material_ui.dart` (pinned `^1.11.1`).
+- Requires Flutter 3.50+ / Dart 3.14.
+- `PrismSwitchTile` now uses `activeThumbColor` (replaces the deprecated
+  `activeColor`); the analyzer reports zero issues.
+
 ## 2.0.0
 
 ### Breaking
