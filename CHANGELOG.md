@@ -1,3 +1,9 @@
+## 2.1.1
+
+- Token-source colors annotated for `prism_doctor` audit compatibility.
+- `test/skills_test.dart` fixed to use `ConfigParser.loadConfig` (skills_lint 0.5.3+1).
+- Analyzer infos resolved.
+
 # Changelog
 
 ## 2.1.0
