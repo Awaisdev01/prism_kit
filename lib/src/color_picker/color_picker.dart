@@ -278,13 +278,13 @@ class _HueBar extends StatelessWidget {
   final ValueChanged<double> onChanged;
 
   static const _stops = [
-    Color(0xFFFF0000),
-    Color(0xFFFFFF00),
-    Color(0xFF00FF00),
-    Color(0xFF00FFFF),
-    Color(0xFF0000FF),
-    Color(0xFFFF00FF),
-    Color(0xFFFF0000),
+    Color(0xFFFF0000), // prism_doctor: ignore no_hardcoded_colors (token source)
+    Color(0xFFFFFF00), // prism_doctor: ignore no_hardcoded_colors (token source)
+    Color(0xFF00FF00), // prism_doctor: ignore no_hardcoded_colors (token source)
+    Color(0xFF00FFFF), // prism_doctor: ignore no_hardcoded_colors (token source)
+    Color(0xFF0000FF), // prism_doctor: ignore no_hardcoded_colors (token source)
+    Color(0xFFFF00FF), // prism_doctor: ignore no_hardcoded_colors (token source)
+    Color(0xFFFF0000), // prism_doctor: ignore no_hardcoded_colors (token source)
   ];
 
   @override

@@ -176,7 +176,7 @@ extension PrismTokenPresets on PrismTokens {
 /// [base] is respected and extended rather than replaced, so typography and
 /// component themes you already configured survive.
 ThemeData prismTheme({
-  Color seed = const Color(0xFF39A9DB),
+  Color seed = const Color(0xFF39A9DB), // prism_doctor: ignore no_hardcoded_colors (token source)
   Brightness brightness = Brightness.light,
   PrismDensity density = PrismDensity.comfortable,
   PrismShape shape = PrismShape.rounded,

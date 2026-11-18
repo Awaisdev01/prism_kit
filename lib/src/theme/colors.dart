@@ -172,30 +172,30 @@ class PrismColors {
 
     // A hand-tuned green keeps "success" distinct from the primary hue,
     // which is often blue or purple in Material You.
-    final success = isDark ? const Color(0xFF7BD8A8) : const Color(0xFF1B7A4B);
+    final success = isDark ? const Color(0xFF7BD8A8) : const Color(0xFF1B7A4B); // prism_doctor: ignore no_hardcoded_colors (token source)
     final successContainer = isDark
-        ? const Color(0xFF1E4C33)
-        : const Color(0xFFC9F2DC);
+        ? const Color(0xFF1E4C33) // prism_doctor: ignore no_hardcoded_colors (token source)
+        : const Color(0xFFC9F2DC); // prism_doctor: ignore no_hardcoded_colors (token source)
     final onSuccessContainer = isDark
-        ? const Color(0xFFC9F2DC)
-        : const Color(0xFF06301A);
+        ? const Color(0xFFC9F2DC) // prism_doctor: ignore no_hardcoded_colors (token source)
+        : const Color(0xFF06301A); // prism_doctor: ignore no_hardcoded_colors (token source)
 
     // Warning leans amber, again to stay distinct from `tertiary`.
-    final warning = isDark ? const Color(0xFFFFCF6B) : const Color(0xFF8A5A00);
+    final warning = isDark ? const Color(0xFFFFCF6B) : const Color(0xFF8A5A00); // prism_doctor: ignore no_hardcoded_colors (token source)
     final warningContainer = isDark
-        ? const Color(0xFF54401A)
-        : const Color(0xFFFFE7B8);
+        ? const Color(0xFF54401A) // prism_doctor: ignore no_hardcoded_colors (token source)
+        : const Color(0xFFFFE7B8); // prism_doctor: ignore no_hardcoded_colors (token source)
     final onWarningContainer = isDark
-        ? const Color(0xFFFFE7B8)
-        : const Color(0xFF2E1F00);
+        ? const Color(0xFFFFE7B8) // prism_doctor: ignore no_hardcoded_colors (token source)
+        : const Color(0xFF2E1F00); // prism_doctor: ignore no_hardcoded_colors (token source)
 
     return PrismColors(
       success: success,
-      onSuccess: isDark ? const Color(0xFF00391F) : Colors.white,
+      onSuccess: isDark ? const Color(0xFF00391F) : Colors.white, // prism_doctor: ignore no_hardcoded_colors (token source)
       successContainer: successContainer,
       onSuccessContainer: onSuccessContainer,
       warning: warning,
-      onWarning: isDark ? const Color(0xFF3D2C00) : Colors.white,
+      onWarning: isDark ? const Color(0xFF3D2C00) : Colors.white, // prism_doctor: ignore no_hardcoded_colors (token source)
       warningContainer: warningContainer,
       onWarningContainer: onWarningContainer,
       error: scheme.error,

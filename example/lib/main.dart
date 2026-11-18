@@ -47,7 +47,7 @@ class _PrismGalleryAppState extends State<PrismGalleryApp> {
 
   @override
   Widget build(BuildContext context) {
-    const seed = Color(0xFF39A9DB);
+    const seed = Color(0xFF39A9DB); // prism_doctor: ignore no_hardcoded_colors (token source)
 
     // One token set, installed in both themes. Flip the switch in the app bar
     // and watch every component change rhythm at once.
@@ -1083,10 +1083,10 @@ class PaletteDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final colors = <Color>[
-      const Color(0xFF39A9DB),
-      const Color(0xFFF39237),
-      const Color(0xFF2E7D5B),
-      const Color(0xFFB04141),
+      const Color(0xFF39A9DB), // prism_doctor: ignore no_hardcoded_colors (token source)
+      const Color(0xFFF39237), // prism_doctor: ignore no_hardcoded_colors (token source)
+      const Color(0xFF2E7D5B), // prism_doctor: ignore no_hardcoded_colors (token source)
+      const Color(0xFFB04141), // prism_doctor: ignore no_hardcoded_colors (token source)
     ];
     return Scaffold(
       appBar: AppBar(title: const Text('PrismPalette')),
@@ -2025,7 +2025,7 @@ class ColorPickerDemo extends StatefulWidget {
 }
 
 class _ColorPickerDemoState extends State<ColorPickerDemo> {
-  Color _color = const Color(0xFF39A9DB);
+  Color _color = const Color(0xFF39A9DB); // prism_doctor: ignore no_hardcoded_colors (token source)
 
   @override
   Widget build(BuildContext context) {

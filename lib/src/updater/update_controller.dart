@@ -99,15 +99,13 @@ class PrismUpdateFailure extends PrismUpdateState {
 class PrismUpdateController extends ChangeNotifier {
   /// Creates a controller.
   PrismUpdateController({
-    required PrismUpdateSource source,
+    required this._source,
     this.policy = const UpdatePolicy(),
     required this.currentVersion,
     PrismUpdatePlatformInfo? platformInfo,
     this.autoCheck = true,
-    PrismSkipStore? skipStore,
-  }) : _source = source,
-       _skipStore = skipStore,
-       platformInfo = platformInfo ?? PrismUpdatePlatformInfo.detect() {
+    this._skipStore,
+  })  : platformInfo = platformInfo ?? PrismUpdatePlatformInfo.detect() {
     if (autoCheck) {
       scheduleMicrotask(checkNow);
     }

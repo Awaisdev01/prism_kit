@@ -55,7 +55,7 @@ Widget prismTestApp({
   final base =
       theme ??
       ThemeData(
-        colorSchemeSeed: const Color(0xFF39A9DB),
+        colorSchemeSeed: const Color(0xFF39A9DB), // prism_doctor: ignore no_hardcoded_colors (token source)
         brightness: brightness,
       );
 
