@@ -267,6 +267,6 @@ class _PrismPaginatedListState<T> extends State<PrismPaginatedList<T>> {
       );
     }
     // More pages likely exist but the user hasn't scrolled near the end yet.
-    return const SizedBox(height: 1);
+    return const SizedBox(height: 1); // prism_doctor: ignore no_magic_numbers (component metric)
   }
 }

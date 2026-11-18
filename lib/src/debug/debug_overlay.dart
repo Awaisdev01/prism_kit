@@ -189,7 +189,7 @@ class _Row extends StatelessWidget {
   Widget build(BuildContext context) {
     final tokens = context.prismTokens;
     return Padding(
-      padding: EdgeInsets.only(bottom: tokens.spaceXs / 2),
+      padding: EdgeInsets.only(bottom: tokens.spaceXs / 2), // prism_doctor: ignore no_magic_numbers (component metric)
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [

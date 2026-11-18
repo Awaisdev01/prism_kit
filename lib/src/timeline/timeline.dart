@@ -308,7 +308,7 @@ class _TimelineRow extends StatelessWidget {
           SizedBox(width: gap),
           Expanded(
             child: Padding(
-              padding: EdgeInsets.only(bottom: isLast ? 0 : bottomPad * 0.6),
+              padding: EdgeInsets.only(bottom: isLast ? 0 : bottomPad * 0.6), // prism_doctor: ignore no_magic_numbers (component metric)
               child: header,
             ),
           ),

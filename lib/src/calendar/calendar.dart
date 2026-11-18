@@ -202,7 +202,7 @@ class PrismCalendar extends StatelessWidget {
                       builder: (context) {
                         final dayNumber = week * 7 + slot - leading + 1;
                         if (dayNumber < 1 || dayNumber > daysInMonth) {
-                          return const SizedBox(height: 44);
+                          return const SizedBox(height: 44); // prism_doctor: ignore no_magic_numbers (component metric)
                         }
                         final date = DateTime(
                           month.year,

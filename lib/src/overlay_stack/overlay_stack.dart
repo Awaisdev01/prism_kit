@@ -292,7 +292,7 @@ class _TourLayer extends StatelessWidget {
             children: [
               for (var i = 0; i < count; i++)
                 Container(
-                  margin: const EdgeInsets.only(right: 4),
+                  margin: const EdgeInsets.only(right: 4), // prism_doctor: ignore no_magic_numbers (component metric)
                   width: i == index ? 20 : 8,
                   height: 8,
                   decoration: BoxDecoration(

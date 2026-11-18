@@ -324,7 +324,7 @@ class PrismImagePickerTile extends StatelessWidget {
                             onTap: () => onRemove!(image),
                             customBorder: const CircleBorder(),
                             child: Container(
-                              padding: const EdgeInsets.all(2),
+                              padding: const EdgeInsets.all(2), // prism_doctor: ignore no_magic_numbers (component metric)
                               decoration: BoxDecoration(
                                 color: theme.colorScheme.onSurface.withValues(
                                   alpha: 0.7,

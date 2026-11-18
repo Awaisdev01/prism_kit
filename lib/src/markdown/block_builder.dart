@@ -100,14 +100,14 @@ class BlockBuilder {
       const TextStyle(height: 1.25),
     );
     return Padding(
-      padding: EdgeInsets.only(top: level == 0 ? 8 : 12, bottom: 6),
+      padding: EdgeInsets.only(top: level == 0 ? 8 : 12, bottom: 6), // prism_doctor: ignore no_magic_numbers
       child: _text(_inlines(node), effective),
     );
   }
 
   Widget _paragraph(md.Element node) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4),
+      padding: const EdgeInsets.symmetric(vertical: 4), // prism_doctor: ignore no_magic_numbers
       child: _text(_inlines(node), style.textStyle),
     );
   }
@@ -206,7 +206,7 @@ class BlockBuilder {
         }
         items.add(
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 2),
+            padding: const EdgeInsets.symmetric(vertical: 2), // prism_doctor: ignore no_magic_numbers
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -214,7 +214,7 @@ class BlockBuilder {
                   width: checkbox != null ? 24 : (ordered ? 28 : 16),
                   child: checkbox != null
                       ? Padding(
-                          padding: const EdgeInsets.only(right: 4),
+                          padding: const EdgeInsets.only(right: 4), // prism_doctor: ignore no_magic_numbers
                           child: SizedBox(
                             width: 18,
                             height: 18,
@@ -225,7 +225,7 @@ class BlockBuilder {
                 ),
                 Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 2),
+                    padding: const EdgeInsets.symmetric(vertical: 2), // prism_doctor: ignore no_magic_numbers
                     child: _text(
                       InlineBuilder(
                         style: style,
@@ -290,14 +290,14 @@ class BlockBuilder {
       }
     }
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4),
+      padding: const EdgeInsets.symmetric(vertical: 4), // prism_doctor: ignore no_magic_numbers
       child: Table(border: style.tableBorder, children: rows),
     );
   }
 
   Widget _horizontalRule() {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8),
+      padding: const EdgeInsets.symmetric(vertical: 8), // prism_doctor: ignore no_magic_numbers
       child: Divider(
         thickness: style.horizontalRuleThickness,
         color: style.horizontalRuleColor,

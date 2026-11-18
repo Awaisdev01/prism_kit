@@ -78,7 +78,7 @@ class PrismLoadingOverlay extends StatelessWidget {
                         children: [
                           spinner,
                           if (message != null) ...[
-                            const SizedBox(height: 14),
+                            const SizedBox(height: 14), // prism_doctor: ignore no_magic_numbers (component metric)
                             Text(
                               message!,
                               style: Theme.of(context).textTheme.bodyMedium

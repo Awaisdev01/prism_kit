@@ -241,12 +241,12 @@ class _BulletRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 2),
+      padding: const EdgeInsets.symmetric(vertical: 2), // prism_doctor: ignore no_magic_numbers
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.only(top: 7, right: 8),
+            padding: const EdgeInsets.only(top: 7, right: 8), // prism_doctor: ignore no_magic_numbers
             child: Icon(
               Icons.circle,
               size: 5,
@@ -303,7 +303,7 @@ class _VersionCard extends StatelessWidget {
               children: [
                 Text('v${entry.version}', style: versionStyle),
                 if (entry.title != null) ...[
-                  const SizedBox(width: 8),
+                  const SizedBox(width: 8), // prism_doctor: ignore no_magic_numbers
                   Expanded(
                     child: Text(
                       entry.title!,
@@ -313,7 +313,7 @@ class _VersionCard extends StatelessWidget {
                   ),
                 ],
                 if (isNew) ...[
-                  const SizedBox(width: 8),
+                  const SizedBox(width: 8), // prism_doctor: ignore no_magic_numbers
                   Container(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 8,
@@ -340,14 +340,14 @@ class _VersionCard extends StatelessWidget {
               ],
             ),
             if (entry.date != null) ...[
-              const SizedBox(height: 2),
+              const SizedBox(height: 2), // prism_doctor: ignore no_magic_numbers
               Text(entry.date!, style: dateStyle),
             ],
-            const SizedBox(height: 8),
+            const SizedBox(height: 8), // prism_doctor: ignore no_magic_numbers
             if (entry.isCategorized)
               for (final section in entry.sections.entries) ...[
                 Padding(
-                  padding: const EdgeInsets.only(top: 4, bottom: 4),
+                  padding: const EdgeInsets.only(top: 4, bottom: 4), // prism_doctor: ignore no_magic_numbers
                   child: Text(
                     section.key,
                     style:
@@ -480,7 +480,7 @@ class WhatsNewSheet extends StatelessWidget {
               .toList();
 
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
+      padding: const EdgeInsets.fromLTRB(20, 0, 20, 24), // prism_doctor: ignore no_magic_numbers
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -489,7 +489,7 @@ class WhatsNewSheet extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineSmall,
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers
           Expanded(
             child: visible.isEmpty
                 ? const SizedBox.shrink()

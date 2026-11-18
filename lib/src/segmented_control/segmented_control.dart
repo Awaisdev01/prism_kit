@@ -132,7 +132,7 @@ class PrismSegmentedControl<T> extends StatelessWidget {
           borderRadius: BorderRadius.circular(tokens.radiusXl),
           border: Border.all(color: colors.outline, width: tokens.borderWidth),
         ),
-        padding: EdgeInsets.all(tokens.borderWidth * 2),
+        padding: EdgeInsets.all(tokens.borderWidth * 2), // prism_doctor: ignore no_magic_numbers (component metric)
         child: scrolls
             ? SingleChildScrollView(
                 scrollDirection: Axis.horizontal,

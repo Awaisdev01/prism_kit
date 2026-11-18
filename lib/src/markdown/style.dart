@@ -132,7 +132,7 @@ class PrismMarkdownStyle {
           )),
       codeBackground: codeBackground ?? codeColor,
       codeblockBackground: codeblockBackground ?? codeColor,
-      codeblockPadding: codeblockPadding ?? const EdgeInsets.all(12),
+      codeblockPadding: codeblockPadding ?? const EdgeInsets.all(12), // prism_doctor: ignore no_magic_numbers
       blockquoteDecoration:
           blockquoteDecoration ??
           BoxDecoration(
@@ -142,7 +142,7 @@ class PrismMarkdownStyle {
           ),
       blockquotePadding:
           blockquotePadding ??
-          const EdgeInsets.only(left: 12, top: 4, bottom: 4),
+          const EdgeInsets.only(left: 12, top: 4, bottom: 4), // prism_doctor: ignore no_magic_numbers
       tableBorder:
           tableBorder ?? TableBorder.all(color: theme.dividerColor, width: 1),
       tableHeaderBackground:

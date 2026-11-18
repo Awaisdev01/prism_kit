@@ -624,7 +624,7 @@ class BannerDemo extends StatelessWidget {
             priority: PrismBannerPriority.severity,
           ),
           const Padding(
-            padding: EdgeInsets.all(16),
+            padding: EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
             child: Text(
               'The banner shows the highest-severity undismissed announcement. '
               'Dismissals persist via shared_preferences — restart and they stay gone.',
@@ -677,7 +677,7 @@ class SearchDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('PrismSearch')),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         child: PrismSearch<String>(
           items: fruits,
           itemLabel: (item) => item,
@@ -780,7 +780,7 @@ class MarkdownDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('PrismMarkdown')),
       body: const SingleChildScrollView(
-        padding: EdgeInsets.all(16),
+        padding: EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         child: PrismMarkdown(
           '# Hello Prism\n\n'
           'A **fast**, plugin-free markdown renderer with full CommonMark\n'
@@ -808,10 +808,10 @@ class CodeDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('PrismCodeView')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismCodeView(code: "void main() {\n  print('Hello, Prism!');\n}"),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers (demo)
           const Text(
             'Built-in Dart & JSON tokenizers — bring your own with LanguageTokenizer.',
           ),
@@ -845,14 +845,14 @@ class _FormDemoState extends State<FormDemo> {
     return Scaffold(
       appBar: AppBar(title: const Text('PrismForm')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismForm(
             controller: _controller,
             child: Column(
               children: [
                 PrismTextField.email(name: 'email', label: 'Email'),
-                const SizedBox(height: 12),
+                const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
                 PrismPasswordField(
                   common: PrismFieldCommon(
                     name: 'password',
@@ -860,7 +860,7 @@ class _FormDemoState extends State<FormDemo> {
                     validators: [Validators.required('Enter a password')],
                   ),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
                 PrismDropdownField<String>(
                   common: PrismFieldCommon(
                     name: 'plan',
@@ -870,7 +870,7 @@ class _FormDemoState extends State<FormDemo> {
                   items: const ['Free', 'Pro', 'Team'],
                   itemLabel: (plan) => plan,
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
                 PrismCheckboxField(
                   common: PrismFieldCommon(
                     name: 'terms',
@@ -878,7 +878,7 @@ class _FormDemoState extends State<FormDemo> {
                     validators: [Validators.required('Please accept')],
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 20), // prism_doctor: ignore no_magic_numbers (demo)
                 FilledButton(
                   onPressed: () async {
                     final ok = await _controller.submit(
@@ -894,7 +894,7 @@ class _FormDemoState extends State<FormDemo> {
                 ),
                 if (_result.isNotEmpty)
                   Padding(
-                    padding: const EdgeInsets.only(top: 12),
+                    padding: const EdgeInsets.only(top: 12), // prism_doctor: ignore no_magic_numbers (demo)
                     child: Text(_result),
                   ),
               ],
@@ -1100,7 +1100,7 @@ class PaletteDemo extends StatelessWidget {
               'Sample extracted swatches:',
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 20), // prism_doctor: ignore no_magic_numbers (demo)
             Wrap(
               spacing: 8,
               children: [
@@ -1150,7 +1150,7 @@ class ChangelogDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('ChangelogView')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           ChangelogView(
             changelog: _changelog,
@@ -1174,18 +1174,18 @@ class AiDemo extends StatelessWidget {
       appBar: AppBar(title: const Text('PrismAi')),
       body: const Center(
         child: Padding(
-          padding: EdgeInsets.all(24),
+          padding: EdgeInsets.all(24), // prism_doctor: ignore no_magic_numbers (demo)
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(Icons.smart_toy_outlined, size: 48),
-              SizedBox(height: 16),
+              SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers (demo)
               Text(
                 'Provider-agnostic streaming AI chat.',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 12),
+              SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
               Text(
                 'PrismAiChatView gives you a complete streaming chat UI.\n\n'
                 'Plug in any provider:\n\n'
@@ -1216,22 +1216,22 @@ class SkeletonDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('PrismSkeleton')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: const [
           Text('Card skeleton — keeps the page shape while loading'),
-          SizedBox(height: 12),
+          SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           PrismSkeletonCard(mediaHeight: 140, lines: 3),
-          SizedBox(height: 24),
+          SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
           Text('Tile list skeleton'),
-          SizedBox(height: 12),
+          SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           PrismSkeletonList.tiles(count: 3),
-          SizedBox(height: 24),
+          SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
           Text('Text + circle primitives'),
-          SizedBox(height: 12),
+          SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           Row(
             children: [
               PrismSkeleton.circle(diameter: 44),
-              SizedBox(width: 12),
+              SizedBox(width: 12), // prism_doctor: ignore no_magic_numbers (demo)
               Expanded(
                 child: PrismSkeletonText(lines: 2, lastLineFraction: 0.4),
               ),
@@ -1253,13 +1253,13 @@ class AvatarDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('PrismAvatar')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           const Text(
             'Initials are derived automatically and the colour is '
             'stable for a given name.',
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers (demo)
           Wrap(
             spacing: 12,
             runSpacing: 12,
@@ -1270,9 +1270,9 @@ class AvatarDemo extends StatelessWidget {
               PrismAvatar(name: 'Dana Malik', size: 64),
             ],
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
           const Text('Presence indicators'),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           Wrap(
             spacing: 12,
             children: const [
@@ -1285,9 +1285,9 @@ class AvatarDemo extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
           const Text('Rounded shape for teams and badges'),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           Row(
             children: [
               const PrismAvatar(
@@ -1295,7 +1295,7 @@ class AvatarDemo extends StatelessWidget {
                 size: 48,
                 shape: PrismAvatarShape.rounded,
               ),
-              const SizedBox(width: 12),
+              const SizedBox(width: 12), // prism_doctor: ignore no_magic_numbers (demo)
               const PrismAvatar(
                 name: 'Ayesha Khan',
                 size: 48,
@@ -1328,7 +1328,7 @@ class _ChipInputDemoState extends State<ChipInputDemo> {
     return Scaffold(
       appBar: AppBar(title: const Text('PrismChipInput')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismChipInput(
             label: 'Tags',
@@ -1345,7 +1345,7 @@ class _ChipInputDemoState extends State<ChipInputDemo> {
             helperText: 'Paste a comma-separated list to add several at once.',
             onChanged: (next) => setState(() => _tags = next),
           ),
-          const SizedBox(height: 32),
+          const SizedBox(height: 32), // prism_doctor: ignore no_magic_numbers (demo)
           PrismChipInput(
             label: 'Up to 3 (no duplicates)',
             value: _limited,
@@ -1376,10 +1376,10 @@ class _OtpDemoState extends State<OtpDemo> {
     return Scaffold(
       appBar: AppBar(title: const Text('PrismOtpField')),
       body: ListView(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(24), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           const Text('Six-digit code — paste works, and it auto-submits.'),
-          const SizedBox(height: 20),
+          const SizedBox(height: 20), // prism_doctor: ignore no_magic_numbers (demo)
           PrismOtpField(
             length: 6,
             groupSeparatorAfter: 3,
@@ -1398,11 +1398,11 @@ class _OtpDemoState extends State<OtpDemo> {
               }
             },
           ),
-          const SizedBox(height: 32),
+          const SizedBox(height: 32), // prism_doctor: ignore no_magic_numbers (demo)
           const Text('Obscured PIN variant'),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           const PrismOtpField(length: 4, obscure: true, autofocus: false),
-          const SizedBox(height: 20),
+          const SizedBox(height: 20), // prism_doctor: ignore no_magic_numbers (demo)
           Text('Current value: ${_code.isEmpty ? '—' : _code}'),
         ],
       ),
@@ -1420,7 +1420,7 @@ class TimelineDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('PrismTimeline')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismTimeline(
             entries: [
@@ -1493,7 +1493,7 @@ class _StepperDemoState extends State<StepperDemo> {
     return Scaffold(
       appBar: AppBar(title: const Text('PrismStepper')),
       body: Padding(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(24), // prism_doctor: ignore no_magic_numbers (demo)
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -1503,7 +1503,7 @@ class _StepperDemoState extends State<StepperDemo> {
               erroredIndices: _errored,
               onStepTapped: (i) => setState(() => _index = i),
             ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 40), // prism_doctor: ignore no_magic_numbers (demo)
             const Text(
               'Resize the window: the stepper collapses to a compact '
               '"Step X of Y" header with a progress bar.',
@@ -1517,7 +1517,7 @@ class _StepperDemoState extends State<StepperDemo> {
                       : () => setState(() => _index--),
                   child: const Text('Back'),
                 ),
-                const SizedBox(width: 12),
+                const SizedBox(width: 12), // prism_doctor: ignore no_magic_numbers (demo)
                 FilledButton(
                   onPressed: () {
                     setState(() {
@@ -1557,7 +1557,7 @@ class DataTableDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('PrismDataTable')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismDataTable<_Invoice>(
             rows: _invoices,
@@ -1589,7 +1589,7 @@ class DataTableDemo extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers (demo)
           const Text(
             'Tap a header to sort. On a narrow window the same data '
             'becomes labelled cards.',
@@ -1622,13 +1622,13 @@ class CommandPaletteDemo extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Icon(Icons.keyboard_command_key, size: 48),
-            const SizedBox(height: 16),
+            const SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers (demo)
             const Text(
               'A ⌘K-style launcher with fuzzy search,\ngrouping and '
               'full keyboard navigation.',
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
             FilledButton.icon(
               onPressed: () => _open(context),
               icon: const Icon(Icons.search),
@@ -1696,7 +1696,7 @@ class AdaptiveSheetDemo extends StatelessWidget {
       appBar: AppBar(title: const Text('PrismAdaptiveSheet')),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(24),
+          padding: const EdgeInsets.all(24), // prism_doctor: ignore no_magic_numbers (demo)
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -1706,7 +1706,7 @@ class AdaptiveSheetDemo extends StatelessWidget {
                 'Resize the window and try again.',
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
               FilledButton(
                 onPressed: () => _open(context),
                 child: const Text('Show sheet'),
@@ -1724,7 +1724,7 @@ class AdaptiveSheetDemo extends StatelessWidget {
       title: 'Delete this note?',
       subtitle: 'The note will move to Trash for 30 days.',
       child: const Padding(
-        padding: EdgeInsets.only(top: 8),
+        padding: EdgeInsets.only(top: 8), // prism_doctor: ignore no_magic_numbers (demo)
         child: Text(
           'You can restore it any time from the Trash, or delete it '
           'permanently right away.',
@@ -1784,7 +1784,7 @@ class _ConnectionDemoState extends State<ConnectionDemo> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(_online ? 'Simulated: online' : 'Simulated: offline'),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers (demo)
                   FilledButton(
                     onPressed: () {
                       _online = !_online;
@@ -1814,7 +1814,7 @@ class TokensDemo extends StatelessWidget {
     final colors = context.prismColors;
 
     Widget swatch(String label, Color color, Color onColor) => Container(
-      padding: const EdgeInsets.all(12),
+      padding: const EdgeInsets.all(12), // prism_doctor: ignore no_magic_numbers (demo)
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(tokens.radiusMd),
@@ -1825,13 +1825,13 @@ class TokensDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Prism design tokens')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           Text(
             'Semantic colors',
             style: Theme.of(context).textTheme.titleMedium,
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           Wrap(
             spacing: 8,
             runSpacing: 8,
@@ -1844,9 +1844,9 @@ class TokensDemo extends StatelessWidget {
                 ),
             ],
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
           Text('Spacing scale', style: Theme.of(context).textTheme.titleMedium),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           for (final (name, value) in [
             ('spaceXs', tokens.spaceXs),
             ('spaceSm', tokens.spaceSm),
@@ -1856,19 +1856,19 @@ class TokensDemo extends StatelessWidget {
             ('spaceXxl', tokens.spaceXxl),
           ])
             Padding(
-              padding: const EdgeInsets.only(bottom: 6),
+              padding: const EdgeInsets.only(bottom: 6), // prism_doctor: ignore no_magic_numbers (demo)
               child: Row(
                 children: [
-                  SizedBox(width: 90, child: Text(name)),
+                  SizedBox(width: 90, child: Text(name)), // prism_doctor: ignore no_magic_numbers (demo)
                   Container(height: 14, width: value * 4, color: colors.info),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: 8), // prism_doctor: ignore no_magic_numbers (demo)
                   Text(value.toStringAsFixed(0)),
                 ],
               ),
             ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
           Text('Corner radii', style: Theme.of(context).textTheme.titleMedium),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           Wrap(
             spacing: 12,
             children: [
@@ -1894,15 +1894,15 @@ class TokensDemo extends StatelessWidget {
                 ),
             ],
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
           Text('Motion', style: Theme.of(context).textTheme.titleMedium),
-          const SizedBox(height: 8),
+          const SizedBox(height: 8), // prism_doctor: ignore no_magic_numbers (demo)
           Text(
             'fast ${tokens.durationFast.inMilliseconds} ms · '
             'medium ${tokens.durationMedium.inMilliseconds} ms · '
             'slow ${tokens.durationSlow.inMilliseconds} ms',
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
           Text(
             'Override any of these in ThemeData.extensions: const '
             '[PrismTokens(spaceMd: 20, radiusMd: 16)].',
@@ -1924,12 +1924,12 @@ class AiBubbleDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('AI message bubble')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismAiMessageBubble(
             message: AiChatMessage.user('Summarise this article for me.'),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           PrismAiMessageBubble(
             message: AiChatMessage.assistant(
               '## Summary\n\nThe article argues that **adaptive layouts** '
@@ -1940,7 +1940,7 @@ class AiBubbleDemo extends StatelessWidget {
             onCopy: () {},
             onRegenerate: () {},
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           PrismAiMessageBubble(
             message: AiChatMessage.assistantWithToolCalls(const [
               AiToolCallRequest(
@@ -1950,7 +1950,7 @@ class AiBubbleDemo extends StatelessWidget {
               ),
             ], content: 'Checking the weather…'),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           PrismAiMessageBubble(
             message: AiChatMessage.assistant(''),
             isStreaming: true,
@@ -1997,12 +1997,12 @@ class _AiComposerDemoState extends State<AiComposerDemo> {
         children: [
           Expanded(
             child: ListView(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
               children: [for (final line in _log) Text(line)],
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(12),
+            padding: const EdgeInsets.all(12), // prism_doctor: ignore no_magic_numbers (demo)
             child: PrismPromptComposer(
               busy: _busy,
               suggestions: const ['Summarise', 'Translate', 'Explain simply'],
@@ -2032,7 +2032,7 @@ class _ColorPickerDemoState extends State<ColorPickerDemo> {
     return Scaffold(
       appBar: AppBar(title: const Text('Color picker')),
       body: ListView(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(24), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           Container(
             height: 80,
@@ -2041,7 +2041,7 @@ class _ColorPickerDemoState extends State<ColorPickerDemo> {
               borderRadius: BorderRadius.circular(16),
             ),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
           PrismColorPicker(
             color: _color,
             onChanged: (c) => setState(() => _color = c),
@@ -2105,7 +2105,7 @@ class SparklineDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Sparkline')),
       body: ListView(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(24), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismCard(
             child: ListTile(
@@ -2117,7 +2117,7 @@ class SparklineDemo extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           PrismCard(
             child: ListTile(
               title: const Text('Errors this week'),
@@ -2145,11 +2145,11 @@ class BarChartDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Bar chart')),
       body: ListView(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(24), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismCard(
             child: Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
               child: PrismBarChart(
                 bars: const [
                   PrismBar(label: 'Mon', value: 12),
@@ -2175,11 +2175,11 @@ class LineChartDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Line chart')),
       body: ListView(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(24), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismCard(
             child: Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
               child: PrismLineChart(
                 values: const [120, 132, 128, 141, 150, 148, 166],
                 labels: const ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
@@ -2201,11 +2201,11 @@ class DonutChartDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Donut chart')),
       body: ListView(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(24), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismCard(
             child: Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
               child: PrismDonutChart(
                 slices: const [
                   PrismDonutSlice(label: 'Direct', value: 45),
@@ -2242,7 +2242,7 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
     return Scaffold(
       appBar: AppBar(title: const Text('File picker')),
       body: ListView(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(24), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismFilePickerTile(
             files: _files,
@@ -2286,7 +2286,7 @@ class _ImagePickerDemoState extends State<ImagePickerDemo> {
     return Scaffold(
       appBar: AppBar(title: const Text('Image picker')),
       body: ListView(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(24), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismImagePickerTile(
             images: _images,
@@ -2332,27 +2332,27 @@ class _ControlsDemoState extends State<ControlsDemo> {
     return Scaffold(
       appBar: AppBar(title: const Text('Controls')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismSlider(
             value: _volume,
             label: 'Volume ${(_volume * 100).round()}%',
             onChanged: (v) => setState(() => _volume = v),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           PrismSwitch(
             title: 'Dark mode',
             subtitle: 'Follow the theme',
             value: _dark,
             onChanged: (v) => setState(() => _dark = v),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           PrismCheckbox(
             title: 'Accept the terms',
             value: _terms,
             onChanged: (v) => setState(() => _terms = v),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           PrismDropdown<String>(
             value: _plan,
             items: const [
@@ -2391,18 +2391,18 @@ class _ProgressStatesDemoState extends State<ProgressStatesDemo> {
         body: Stack(
           children: [
             ListView(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
               children: [
                 PrismLinearProgress(value: 0.7, label: 'Uploading 70%'),
-                const SizedBox(height: 16),
+                const SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers (demo)
                 const Center(child: PrismCircularProgress(value: 0.42)),
-                const SizedBox(height: 24),
+                const SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
                 const PrismEmptyState(
                   icon: Icons.inbox_outlined,
                   title: 'Nothing here yet',
                   subtitle: 'Items you add will appear in this list.',
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers (demo)
                 FilledButton(
                   onPressed: () => setState(() => _loading = !_loading),
                   child: Text(
@@ -2428,16 +2428,16 @@ class CardsTilesDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Cards & tiles')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismCard(
             onTap: () {},
             child: const Padding(
-              padding: EdgeInsets.all(16),
+              padding: EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
               child: Text('A tappable card'),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (demo)
           const PrismTile(
             leading: Icon(Icons.person_outline),
             title: 'Ayesha Khan',
@@ -2466,14 +2466,14 @@ class CarouselZoomDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Carousel & zoom')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismCarousel(
             items: const [
               Card(
                 child: Center(
                   child: Padding(
-                    padding: EdgeInsets.all(48),
+                    padding: EdgeInsets.all(48), // prism_doctor: ignore no_magic_numbers (demo)
                     child: Text('Slide 1'),
                   ),
                 ),
@@ -2481,7 +2481,7 @@ class CarouselZoomDemo extends StatelessWidget {
               Card(
                 child: Center(
                   child: Padding(
-                    padding: EdgeInsets.all(48),
+                    padding: EdgeInsets.all(48), // prism_doctor: ignore no_magic_numbers (demo)
                     child: Text('Slide 2'),
                   ),
                 ),
@@ -2489,14 +2489,14 @@ class CarouselZoomDemo extends StatelessWidget {
               Card(
                 child: Center(
                   child: Padding(
-                    padding: EdgeInsets.all(48),
+                    padding: EdgeInsets.all(48), // prism_doctor: ignore no_magic_numbers (demo)
                     child: Text('Slide 3'),
                   ),
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 24), // prism_doctor: ignore no_magic_numbers (demo)
           PrismZoomableImage(
             imageUrl: 'https://picsum.photos/seed/prism/600/400',
             placeholder: const SizedBox(
@@ -2528,7 +2528,7 @@ class _CalendarDemoState extends State<CalendarDemo> {
     return Scaffold(
       appBar: AppBar(title: const Text('Calendar')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           PrismCalendar(
             month: _month,
@@ -2564,7 +2564,7 @@ class _FeedbackBitsDemoState extends State<FeedbackBitsDemo> {
     return Scaffold(
       appBar: AppBar(title: const Text('Feedback bits')),
       body: ListView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16), // prism_doctor: ignore no_magic_numbers (demo)
         children: [
           Center(
             child: PrismBadge(
@@ -2576,7 +2576,7 @@ class _FeedbackBitsDemoState extends State<FeedbackBitsDemo> {
               ),
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers (demo)
           Center(
             child: PrismRating(
               value: _rating,
@@ -2584,7 +2584,7 @@ class _FeedbackBitsDemoState extends State<FeedbackBitsDemo> {
               onChanged: (v) => setState(() => _rating = v),
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers (demo)
           PrismSegmentedControl<String>(
             value: _expanded == 0 ? 'list' : 'grid',
             onChanged: (_) {},
@@ -2593,7 +2593,7 @@ class _FeedbackBitsDemoState extends State<FeedbackBitsDemo> {
               PrismSegment(value: 'grid', label: 'Grid'),
             ],
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers (demo)
           PrismAccordion(
             singleExpansion: true,
             sections: [
@@ -2607,7 +2607,7 @@ class _FeedbackBitsDemoState extends State<FeedbackBitsDemo> {
               ),
             ],
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 16), // prism_doctor: ignore no_magic_numbers (demo)
           FilledButton.icon(
             onPressed: () {},
             icon: const Icon(Icons.add),

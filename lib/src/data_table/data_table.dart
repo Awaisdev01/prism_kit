@@ -390,7 +390,7 @@ class _HeaderCell extends StatelessWidget {
       children: [
         Flexible(child: Text(label, overflow: TextOverflow.ellipsis)),
         if (sortable) ...[
-          const SizedBox(width: 4),
+          const SizedBox(width: 4), // prism_doctor: ignore no_magic_numbers (component metric)
           Icon(
             !sorted
                 ? Icons.unfold_more

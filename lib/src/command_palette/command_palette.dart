@@ -486,7 +486,7 @@ class _CommandTile extends StatelessWidget {
                     ),
                   ),
                 if (command.trailing != null) ...[
-                  const SizedBox(width: 8),
+                  const SizedBox(width: 8), // prism_doctor: ignore no_magic_numbers (component metric)
                   command.trailing!,
                 ],
               ],

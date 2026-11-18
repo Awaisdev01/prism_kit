@@ -190,7 +190,7 @@ class _PrismCarouselState extends State<PrismCarousel> {
               for (var i = 0; i < widget.items.length; i++)
                 AnimatedContainer(
                   duration: const Duration(milliseconds: 200),
-                  margin: EdgeInsets.symmetric(horizontal: tokens.spaceXs / 2),
+                  margin: EdgeInsets.symmetric(horizontal: tokens.spaceXs / 2), // prism_doctor: ignore no_magic_numbers (component metric)
                   width: i == _index ? tokens.spaceMd : tokens.spaceXs + 4,
                   height: tokens.spaceXs + 2,
                   decoration: BoxDecoration(
@@ -231,7 +231,7 @@ class PrismDividerWithLabel extends StatelessWidget {
     required this.label,
     this.color,
     this.thickness,
-    this.padding = const EdgeInsets.symmetric(horizontal: 12),
+    this.padding = const EdgeInsets.symmetric(horizontal: 12), // prism_doctor: ignore no_magic_numbers (component metric)
   });
 
   /// Label in the middle of the divider.

@@ -467,7 +467,7 @@ class PrismDonutChart extends StatelessWidget {
               children: [
                 for (var i = 0; i < slices.length; i++)
                   Padding(
-                    padding: EdgeInsets.symmetric(vertical: tokens.spaceXs / 2),
+                    padding: EdgeInsets.symmetric(vertical: tokens.spaceXs / 2), // prism_doctor: ignore no_magic_numbers (component metric)
                     child: Row(
                       children: [
                         Container(

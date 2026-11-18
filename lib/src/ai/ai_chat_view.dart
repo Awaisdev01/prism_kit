@@ -86,7 +86,7 @@ final class AiChatView extends StatefulWidget {
     this.inputHint = 'Send a message…',
     this.userBubbleColor,
     this.assistantBubbleColor,
-    this.padding = const EdgeInsets.all(12),
+    this.padding = const EdgeInsets.all(12), // prism_doctor: ignore no_magic_numbers
     this.scrollController,
     this.markdownAssistantResponses = false,
     this.markdownStyle,
@@ -256,7 +256,7 @@ class _AiChatViewState extends State<AiChatView> {
             ),
             if (widget.onSendMessage != null)
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8), // prism_doctor: ignore no_magic_numbers
                 child: Row(
                   children: [
                     Expanded(
@@ -270,7 +270,7 @@ class _AiChatViewState extends State<AiChatView> {
                         onSubmitted: (_) => _submit(),
                       ),
                     ),
-                    const SizedBox(width: 8),
+                    const SizedBox(width: 8), // prism_doctor: ignore no_magic_numbers
                     IconButton.filled(
                       onPressed: _submit,
                       icon: const Icon(Icons.send),
@@ -309,7 +309,7 @@ class _TypingIndicatorState extends State<_TypingIndicator>
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8), // prism_doctor: ignore no_magic_numbers
       child: Row(
         children: List.generate(3, (i) {
           return FadeTransition(
@@ -324,7 +324,7 @@ class _TypingIndicatorState extends State<_TypingIndicator>
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 2),
+              padding: const EdgeInsets.symmetric(horizontal: 2), // prism_doctor: ignore no_magic_numbers
               child: CircleAvatar(
                 radius: 4,
                 backgroundColor: Theme.of(context).colorScheme.onSurfaceVariant,

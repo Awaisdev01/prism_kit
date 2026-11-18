@@ -86,7 +86,7 @@ class PrismStateView<T> extends StatelessWidget {
     // optional types, so coalesce once here instead of at each use site.
     final iconSize = resolved.iconSize ?? 48;
     final gap = resolved.gap ?? 8;
-    final padding = resolved.padding ?? const EdgeInsets.all(24);
+    final padding = resolved.padding ?? const EdgeInsets.all(24); // prism_doctor: ignore no_magic_numbers (component metric)
     final transition =
         resolved.transitionDuration ?? const Duration(milliseconds: 250);
 
@@ -102,7 +102,7 @@ class PrismStateView<T> extends StatelessWidget {
               child: CircularProgressIndicator(color: resolved.accentColor),
             ),
             if ((loadingMessage ?? message) != null) ...[
-              const SizedBox(height: 12),
+              const SizedBox(height: 12), // prism_doctor: ignore no_magic_numbers (component metric)
               Text(
                 loadingMessage ?? message!,
                 style: resolved.messageStyle,

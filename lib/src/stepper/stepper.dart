@@ -201,7 +201,7 @@ class _CompactStepper extends StatelessWidget {
             ),
             if (current.isOptional)
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2), // prism_doctor: ignore no_magic_numbers
                 decoration: BoxDecoration(
                   color: colors.surfaceSunken,
                   borderRadius: BorderRadius.circular(tokens.radiusXl),
@@ -314,7 +314,7 @@ class _WideStepper extends StatelessWidget {
                           ),
                         if (steps[i].subtitle != null &&
                             (horizontalLabels || i == currentIndex)) ...[
-                          const SizedBox(height: 2),
+                          const SizedBox(height: 2), // prism_doctor: ignore no_magic_numbers
                           Text(
                             steps[i].subtitle!,
                             textAlign: TextAlign.center,

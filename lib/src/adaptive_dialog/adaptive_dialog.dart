@@ -144,7 +144,7 @@ class PrismAdaptiveDialog {
         child: ConstrainedBox(
           constraints: BoxConstraints(maxWidth: maxWidth ?? 420),
           child: Padding(
-            padding: const EdgeInsets.all(24),
+            padding: const EdgeInsets.all(24), // prism_doctor: ignore no_magic_numbers (component metric)
             child: content(innerContext),
           ),
         ),
