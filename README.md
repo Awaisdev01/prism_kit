@@ -890,9 +890,9 @@ All class names stay identical (`PrismToast`, `PrismBanner`, `PrismSearch`, …)
 
 ## 📖 Full example
 
-**▶ [Browse the live gallery](https://awaisdev5765.github.io/Prism/)** — every
+**▶ [Browse the live gallery](https://github.com/Awaisdev01/prism_kit#readme)** — every
 component, running in your browser, with
-[the API reference](https://awaisdev5765.github.io/Prism/api/) beside it.
+[the API reference](https://github.com/Awaisdev01/prism_kit#readmeapi/) beside it.
 
 The [`example/`](example/) folder is a **gallery app** with an interactive demo
 for every component:
