@@ -4,9 +4,9 @@ description: >-
   data tables, calendar, tabs, toasts, forms, controls, loading and empty
   states, markdown, an AI chat client, and more.
 version: 2.1.1
-homepage: https://github.com/awaisdev5765/prism
-repository: https://github.com/awaisdev5765/prism
-issue_tracker: https://github.com/awaisdev5765/prism/issues
+homepage: https://github.com/Awaisdev01/prism_kit
+repository: https://github.com/Awaisdev01/prism_kit
+issue_tracker: https://github.com/Awaisdev01/prism_kit/issues
 # Shown by pub.dev as the Documentation link: a landing page with the live
 # gallery and the API reference behind it.
 documentation: https://awaisdev5765.github.io/Prism/
